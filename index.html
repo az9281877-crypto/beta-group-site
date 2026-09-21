@@ -662,6 +662,9 @@
 
   @media (max-width:900px){
     .about-grid, .exch-grid{ gap:44px; }
+    /* Scrolled mobile header: 73px, plus a 10px anchor gap. */
+    main > section[id]:not(#heroSection){ scroll-margin-top:83px; }
+    .menu-close{ color:var(--ink); }
   }
 </style>
 
