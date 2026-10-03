@@ -154,6 +154,13 @@
   .brand .name{ display:flex; flex-direction:column; line-height:1.05; }
   .brand .name b{ font-weight:800; }
   .brand .name span{ font-family:var(--font-mono); font-size:9.5px; font-weight:500; letter-spacing:.16em; color:var(--bone-faint); text-transform:uppercase; margin-top:2px; }
+  header.nav > .brand > .header-logo{ width:178.5625px; height:31.90625px; object-fit:contain; }
+  @media (max-width:900px){
+    header.nav > .brand > .header-logo{ width:163.671875px; height:30px; }
+  }
+  @media (max-width:520px){
+    header.nav > .brand > .header-logo{ width:144.75px; height:26px; }
+  }
 
   nav.links{ display:flex; align-items:center; gap:38px; }
   nav.links a{
@@ -673,11 +680,7 @@
 
 <header class="nav" id="siteNav">
   <a href="#top" class="brand">
-    <svg class="mark" viewBox="0 0 32 32" fill="none">
-      <path d="M16 2 L28 9 V23 L16 30 L4 23 V9 Z" stroke="currentColor" stroke-width="1.4"/>
-      <path d="M16 9 L22 12.5 V19.5 L16 23 L10 19.5 V12.5 Z" fill="#E2A03F"/>
-    </svg>
-    <span class="name"><b>BETA GROUP</b><span>Нефтепродукты · СПб</span></span>
+    <img class="header-logo" src="assets/beta-group-logo.png" alt="BETA GROUP">
   </a>
   <nav class="links">
     <a href="#products">Нефтепродукты</a>
